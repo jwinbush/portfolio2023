@@ -64,7 +64,7 @@ export default function Home() {
             <p className="text-md pt-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-light ">
             A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
             Skilled in problem solving under pressure and dedicated to my team’s success. 
-            When I'm not coding I enjoy creating artwork, learning new skills, making logos in Adobe Photoshop, and exercising . My passion is to 
+            When I'm not coding I enjoy creating artwork, learning new skills, making logos in Adobe Creative Suite, and exercising . My passion is to 
             Contact me below if interested!
             </p>
             
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl pt-20 text-center dark:text-white ">Skills</h3>
+            <h3 className="text-3xl pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -93,36 +93,89 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Beautiful Designs
+                Frontend
               </h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              
+              <p className="text-gray-800 py-1 ">HTML</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-green-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">CSS</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '84%'}}>84%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">JavaScript</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-yellow-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '72%'}}>72%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">ReactJS</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '48%'}}>48%</div>
+              </div>
+              <p className="text-gray-800 py-1 ">AngularJS</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '35%'}}>35%</div>
+              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={backend} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+                Backend
               </h3>
               <p className="py-2">
                 Do you have an idea for your next great website? Let's make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+
+              <p className="text-gray-800 py-1 ">SQL and MySQL</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-gray-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">PHP and PhpMyAdmin</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-indigo-300 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '78%'}}>78%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">Python and Jupyter Notebook</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-yellow-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{width: '68%'}}>68%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">C#</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-purple-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '39%'}}>39%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">C++</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '39%'}}>37%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">ASP.NET</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '35%'}}>35%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">Java</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-orange-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '34%'}}>34%</div>
+              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                More
+              </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
@@ -137,7 +190,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 text-center dark:text-white ">Portfolio</h3>
+            <h3 className="text-3xl py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
