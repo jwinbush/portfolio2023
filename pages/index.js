@@ -64,8 +64,8 @@ export default function Home() {
             <p className="text-md pt-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-light ">
             A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
             Skilled in problem solving under pressure and dedicated to my team’s success. 
-            When I'm not coding I enjoy creating artwork, learning new skills, making logos in Adobe Creative Suite, and exercising . My passion is to 
-            Contact me below if interested!
+            When I'm not coding I enjoy creating artwork, learning new skills, making logos in Adobe Creative Suite, and exercising. 
+            Contact me below!
             </p>
             
             <div className="mx-auto bg-white-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 sm:w-70 flex sm:items-center">
@@ -103,7 +103,7 @@ export default function Home() {
               
               <p className="text-gray-800 py-1 ">HTML</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-green-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
+                <div className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
               </div>
 
               <p className="text-gray-800 py-1 ">CSS</p>
