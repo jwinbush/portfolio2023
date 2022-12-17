@@ -1,8 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -41,7 +41,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-red-500 text- to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="font-semibold bg-gradient-to-r from-red-500 text- to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
                   Resume
@@ -50,20 +50,22 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl font-bold	py-2 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 md:text-6xl">
-              Jawon Winbush
+            <h2 className="text-5xl font-bold	py-2  md:text-6xl dark:text-white">
+              Welcome, my name is<br/>JA<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600">WON WIN</span>BUSH. 
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl font-semibold">
-              Developer and designer.
+              Software developer and UX designer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+            A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
+            Skilled in problem solving under pressure and dedicated to my team’s success. 
+            When I'm not coding I enjoy creating artwork, making logos in Adobe Photoshop, and exercising to stay healthy. 
+            I believe this is a great skill to obtain as an web developer.
+            needs. Join me down below and let's get cracking!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <Link href="https://www.linkedin.com/in/jawonmwinbush/"><AiFillLinkedin className="hover:cursor-pointer"/></Link>
+              <Link href="https://www.github.com/jwinbush/"><AiFillGithub className="hover:cursor-pointer" /></Link>
             </div>
             <div className="mx-auto bg-white-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={jawon} layout="fill" objectFit="cover" className="object-top" />
