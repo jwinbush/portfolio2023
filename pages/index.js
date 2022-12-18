@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import Portfolio from "../pages/portfolio";
+
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -61,16 +63,21 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl font-semibold">
               Software developer and UX designer.
             </h3>
-            <p className="text-md pt-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-light ">
-            A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
-            Skilled in problem solving under pressure and dedicated to my team’s success. 
-            When I'm not coding I enjoy creating artwork, learning new skills, playing the piano, and exercising. 
-            Contact me below!
-            </p>
-            
-            <div className="mx-auto bg-white-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 sm:w-70 flex sm:items-center">
+            <p className="text-md pt-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-light "></p>
+
+            <div class="content flex py-2">
+              <div class="item-body px-2 text-xl text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-lg font-light mt-32 ">
+              A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
+              Skilled in problem solving under pressure and dedicated to my team’s success. 
+              When I'm not coding I enjoy creating artwork, learning new skills, playing the piano, and exercising. 
+              Contact me below!
+             </div>
+
+            <div className="mx-auto bg-white-500 rounded w-80 h-80 relative overflow-hidden mt-12 md:h-96 md:w-96 sm:w-70 flex sm:items-center">
               <Image src={jawon} layout="fill" objectFit="cover" className="object-top" />
             </div>
+          </div>
+          
           </div>
         </section>
         <section>
@@ -211,7 +218,7 @@ export default function Home() {
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                 <div className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '83%'}}>83%</div>
               </div>           
-
+ 
             </div>
           </div>
         </section>
@@ -231,6 +238,7 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
+          <Portfolio />
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
