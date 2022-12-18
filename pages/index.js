@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Skills</h3>
+            <h3 className="text-3xl font-semibold pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -217,7 +217,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Portfolio</h3>
+            <h3 className="text-3xl font-semibold py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
