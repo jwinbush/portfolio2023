@@ -64,7 +64,7 @@ export default function Home() {
             <p className="text-md pt-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-light ">
             A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
             Skilled in problem solving under pressure and dedicated to my team’s success. 
-            When I'm not coding I enjoy creating artwork, learning new skills, making logos in Adobe Creative Suite, and exercising. 
+            When I'm not coding I enjoy creating artwork, learning new skills, playing the piano, and exercising. 
             Contact me below!
             </p>
             
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-xl pt-8 pb-2 font-bold">
                 Frontend
               </h3>
               <p className="py-2">
@@ -103,12 +103,12 @@ export default function Home() {
               
               <p className="text-gray-800 py-1 ">HTML</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
+                <div className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '94%'}}>94%</div>
               </div>
 
               <p className="text-gray-800 py-1 ">CSS</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '84%'}}>84%</div>
+                <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '87%'}}>87%</div>
               </div>
 
               <p className="text-gray-800 py-1 ">JavaScript</p>
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={backend} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-xl pt-8 pb-2 font-bold">
                 Backend
               </h3>
               <p className="py-2">
@@ -136,17 +136,22 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
 
-              <p className="text-gray-800 py-1 ">SQL and MySQL</p>
+              <p className="text-gray-800 py-1 ">SQL & MySQL</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                 <div className="bg-gray-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
               </div>
 
-              <p className="text-gray-800 py-1 ">PHP and PhpMyAdmin</p>
+              <p className="text-gray-800 py-1 ">PHP & PhpMyAdmin</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-indigo-300 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '78%'}}>78%</div>
+                <div className="bg-indigo-300 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '83%'}}>83%</div>
               </div>
 
-              <p className="text-gray-800 py-1 ">Python and Jupyter Notebook</p>
+              <p className="text-gray-800 py-1 ">NodeJS</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-lime-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '72%'}}>72%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">Python & Jupyter Notebook</p>
               <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                 <div className="bg-yellow-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style={{width: '68%'}}>68%</div>
               </div>
@@ -173,18 +178,40 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-xl pt-8 pb-2 font-bold">
                 More
               </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
               </p>
+
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1 ">Visual Studio Code & Visual Studio</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-blue-700 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '95%'}}>95%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">Adobe Photoshop</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-blue-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '90%'}}>90%</div>
+              </div>
+              
+              <p className="text-gray-800 py-1 ">Adobe Illustrator</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '86%'}}>86%</div>
+              </div>   
+              
+              <p className="text-gray-800 py-1 ">PhpStorm</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-purple-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '85%'}}>85%</div>
+              </div>
+
+              <p className="text-gray-800 py-1 ">Figma</p>
+              <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '83%'}}>83%</div>
+              </div>           
+
             </div>
           </div>
         </section>
