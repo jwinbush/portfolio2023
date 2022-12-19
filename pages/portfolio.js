@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+      <div className="max-w-screen-2xl mx-auto px-8 py-16 text-center md:text-left">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(({ id, title, imageSrc, url }) => (
             <Link key={id} href={`${url}`}>
