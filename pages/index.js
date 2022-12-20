@@ -64,7 +64,7 @@ export default function Home() {
               Software developer and UX designer.
             </h3>
 
-            <div className="justify-between flex py-2">
+            <div className="md:justify-between justify-center flex py-2">
               <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-xl md:text-2xl font-light mt-32 ">
               I'm a senior studying informatics at IUPUI. A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
               Skilled in problem solving under pressure and dedicated to my team’s success. My objective is to develop websites and applications that make a difference! 
@@ -72,9 +72,9 @@ export default function Home() {
               Contact me below!
              </p>
 
-            <div className="mx-auto bg-white-500 rounded md:w-80 md:h-80 relative overflow-hidden mt-12 w-56 h-56 md:relative items-center">
+            <div className="mx-auto bg-white-500 rounded md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center invisible md:visible">
               
-              <Image src={jawon} layout="fill" objectFit="cover" className="object-top invisible md:visible" />
+              <Image src={jawon} layout="fill" objectFit="cover" className="object-top" />
             </div>
           </div>
           
