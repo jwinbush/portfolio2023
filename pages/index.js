@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Portfolio from "../pages/portfolio";
-
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -65,13 +64,13 @@ export default function Home() {
               Software developer and UX designer.
             </h3>
 
-            <div className="content flex py-2">
-              <div className="item-body text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-xl md:text-2xl font-light mt-32 ">
-              A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
-              Skilled in problem solving under pressure and dedicated to my team’s success. 
-              When I'm not coding I enjoy creating artwork, learning new skills, playing the piano, and exercising. 
+            <div className="justify-between flex py-2">
+              <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-xl md:text-2xl font-light mt-32 ">
+              I'm a senior studying informatics at IUPUI. A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
+              Skilled in problem solving under pressure and dedicated to my team’s success. My objective is to develop websites and applications that make a difference! 
+              When I'm not coding I enjoy creating artwork, learning new skills, watching fútbol, and exercising. 
               Contact me below!
-             </div>
+             </p>
 
             <div className="mx-auto bg-white-500 rounded md:w-80 md:h-80 relative overflow-hidden mt-12 w-56 h-56 md:relative items-center">
               
@@ -81,6 +80,7 @@ export default function Home() {
           
           </div>
         </section>
+  
         <section>
           <div>
             <h3 className="text-3xl md:text-5xl font-semibold pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Skills</h3>
@@ -103,10 +103,7 @@ export default function Home() {
               <h3 className="text-xl pt-8 pb-2 font-bold">
                 Frontend
               </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
+              
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               
               <p className="text-gray-800 py-1 ">HTML</p>
@@ -121,12 +118,12 @@ export default function Home() {
 
               <p className="text-gray-800 py-1 ">JavaScript</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-yellow-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '72%'}}>72%</div>
+                <div className="bg-yellow-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '77%'}}>77%</div>
               </div>
 
               <p className="text-gray-800 py-1 ">ReactJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '48%'}}>48%</div>
+                <div className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: '68%'}}>68%</div>
               </div>
               <p className="text-gray-800 py-1 ">AngularJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -138,10 +135,7 @@ export default function Home() {
               <h3 className="text-xl pt-8 pb-2 font-bold">
                 Backend
               </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
+             
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
 
               <p className="text-gray-800 py-1 ">SQL & MySQL</p>
@@ -188,11 +182,7 @@ export default function Home() {
               <Image src={more} width={100} height={100} />
               <h3 className="text-xl pt-8 pb-2 font-bold">
                 More
-              </h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
+              </h3>           
 
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 ">Visual Studio Code & Visual Studio</p>
