@@ -30,7 +30,7 @@ const Portfolio = () => {
       id: 3,
       video: "https://streamable.com/l/4gooer/mp4.mp4",
       imageSrc: phpRental,
-      url: "https://github.com/coolm4816/I211GroupWork/tree/main/FP",
+      url: "https://github.com/jwinbush/OdysseyRentals",
       demo: "",
     },
     {
