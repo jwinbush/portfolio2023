@@ -1,5 +1,5 @@
 import atomicGaming from "../public/atomicGaming.png";
-import phpRental from "../public/OdysseyScreenshot.jpg";
+import phpRental from "../public/OdysseyRent.png";
 import reactMovie from "../public/InteloHome.png";
 import nextSpotify from "../public/nextSpotify.jpg";
 import HoverVideoPlayer from "react-hover-video-player";
