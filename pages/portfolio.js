@@ -49,7 +49,7 @@ const Portfolio = () => {
     <div id="portfolio" className="w-full">
       <div className="max-w-screen-2xl mx-auto px-8 py-16 text-center md:text-left">
         <div className="max-w-5xl mx-auto grid md:grid-cols-1 gap-12">
-          {portfolios.map(({ id, video, imageSrc, url, demo }) => (
+          {portfolios.map(({ video, imageSrc, url, demo }) => (
             <div className="cursor-pointer group shadow-lg overflow-hidden rounded-md bg-white dark:bg-gray-800">
               <HoverVideoPlayer 
                 videoSrc={video}
