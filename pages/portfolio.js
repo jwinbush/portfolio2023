@@ -63,12 +63,12 @@ const Portfolio = () => {
                 
                  
                 <div className="text-2xl flex justify-center gap-16 text-center capitalize my-2 font-light duration-200 underline-offset-4 dark:text-white">
-                    <Link href={`${url}`} target="_blank">
+                    <a href={`${url}`} target="_blank">
                         <AiFillGithub className="hover:" />
-                    </Link>
-                    <Link href={`${demo}`} target="_blank">
+                    </a>
+                    <a href={`${demo}`} target="_blank">
                       <AiFillHome />        
-                    </Link>
+                    </a>
                 </div>
                 
             </div>
