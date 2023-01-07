@@ -28,4 +28,8 @@ a {
     .content {
         display: block;
     }
+    .navbar {
+        visibility: hidden;
+        display: none;
+    }
 }

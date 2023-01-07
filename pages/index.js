@@ -50,6 +50,7 @@ export default function Home() {
                   className=" cursor-pointer text-2xl"
                 />
               </li>
+              <div className="navbar flex">
               <li>
               <a
                   className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
@@ -72,6 +73,7 @@ export default function Home() {
                   Projects
                 </a>
               </li>
+              
               <li>
                 <a
                   className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
@@ -80,6 +82,7 @@ export default function Home() {
                   Contact
                 </a>
               </li>
+              </div>
               <li>
                 <a
                   className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
