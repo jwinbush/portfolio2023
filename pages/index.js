@@ -5,7 +5,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
 import { useState } from "react";
 import jawon from "../public/AIpicture.png";
 import backend from "../public/backend.png";
@@ -39,20 +39,50 @@ export default function Home() {
         initial={{opacity: 0 }}
         animate={{opacity: 1 }}
         transition={{ duration: 0.75 }} 
-        className=" bg-white px-4 dark:bg-gray-900 md:px10 lg:px-10">
+        className=" bg-white px-4 dark:bg-gray-900 md:px-10 font-extraOld">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 font-bold	">WΦN</h1>
+          <nav className="py-10 mb-6 md:mb-12 flex justify-between dark:text-white">
+            <h1 className="text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 font-extrabold	">WΦN</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
+                <BsFillMoonFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
               </li>
               <li>
+              <a
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="#"
+                >
+                  About
+                </a>              </li>
+              <li>
+              <a
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="#"
+                >
+                  Skills
+                </a>              </li> 
+              <li>
+              <a
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="#"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
                 <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-red-500 text- to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
                   Resume
@@ -60,23 +90,23 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center px-10">
-            <h2 className="text-5xl font-bold	md:text-7xl dark:text-white">
-              Welcome, my name is JA<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600">WON WIN</span>BUSH. 
+          <div className="text-center px-4 md:px-10">
+            <h2 className="text-3xl font-bold	md:text-7xl dark:text-white">
+              Welcome, my name is JA<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">WON WIN</span>BUSH. 
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-4xl font-semibold">
               Software developer and UX designer.
             </h3>
 
-            <div className="md:justify-between justify-center flex py-2">
-              <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-xl md:text-2xl font-light mt-32 ">
+            <div className="content md:justify-between justify-center flex pt-10">
+              <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto text-lg whitespace-pre-line	md:text-3xl font-light mt-4 md:mt-10 ">
               I'm a senior studying informatics at IUPUI. A versatile software developer with 3+ years of experience in programming, UX design, and data management for various projects. 
               Skilled in problem solving under pressure and dedicated to my team’s success. My objective is to develop websites and applications that make a difference! 
               When I'm not coding I enjoy creating artwork, learning new skills, watching fútbol, and exercising. 
-              Contact me below!
+              If you have a project in mind or would like to make an enquiry simply contact me below.
              </p>
 
-            <div className="mx-auto bg-white-500 rounded md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center invisible md:visible">
+            <div className=" hero mx-auto bg-white-500 rounded-lg md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center">
               
               <Image src={jawon} layout="fill" objectFit="cover" className="object-top" />
             </div>
@@ -86,7 +116,7 @@ export default function Home() {
   
         <section>
           <div>
-            <h3 className="text-3xl md:text-5xl font-semibold pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Skills</h3>
+            <h3 className="text-3xl md:text-5xl font-semibold pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 ">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -218,7 +248,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl md:text-5xl font-semibold py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 ">Portfolio</h3>
+            <h3 className="text-3xl md:text-5xl font-semibold py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
