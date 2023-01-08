@@ -11,6 +11,9 @@ module.exports = {
                 extraOld: "extraOld",
                 poppins: ["Poppins", "sans-serif"],
             },
+            height: {
+                '432': '108rem',
+            },
         },
     },
     plugins: [],

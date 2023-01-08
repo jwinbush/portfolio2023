@@ -32,4 +32,7 @@ a {
         visibility: hidden;
         display: none;
     }
+    .bslist {
+        visibility: visible;
+    }
 }

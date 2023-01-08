@@ -3,7 +3,6 @@ import phpRental from "../public/oddrent.png";
 import reactMovie from "../public/InteloHome.png";
 import nextSpotify from "../public/nextSpotify.jpg";
 import HoverVideoPlayer from "react-hover-video-player";
-import Link from "next/link";
 import Image from "next/image";
 import {
     AiFillGithub,
@@ -14,21 +13,21 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      video: "https://cdn-cf-east.streamable.com/video/mp4/4gooer.mp4?Expires=1672268640&Signature=DB6LZIBWScBsEtx-mZAXnMgqqqiD2PFWeW3NqeEFWQfpPKFzHiHUL5kpiFJj5IOBhDXIq3C2SHB4egt6~4NtWjbZYUXmAaA58IAPQGjKZ3lI9B1GiXJWEcUT5~sTfpsHgEUCCz2BoPXDWBzxbGpkSdbbwYyZfH6U~Stvu0vOY~wLuNKdTP36ckIK9~cyD0JsOKc-nR31j7qqfAZ4H2iXKJWCSzluuEKlWH~Ys7CLhkI4zIn8a8aLkWftQ8B4sb8EGN98n~flxTZARXt4yrsbxCxZU--yvAKgRjnBE~FB0uyRizpe3pRL4KMtV0xg1twuEK2KmXLUb2Obhr8LWMKQ2g__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
+      video: "https://cdn-cf-east.streamable.com/video/mp4/4gooer.mp4?Expires=1673419380&Signature=EEsro8zF-HHy3Ujeg0uJ-JhZQzsd6HZgGmV2a7bfUJjd-G60iOAt1ik-~X2PI~9rInlP~40kyq9hAGb3y9Zn-pjBzrdUR2MvkgqC7Fp7XMIPui7pYLMWOGUlX9UOm5F0umFtT8JRqbo3aJB~-vcJs8iulRmzQ0sdWtyMUTMQ3uJxWK7AZq3wbUe9RgxUPgNifPrIiiN0HjnjJjWEnmdjGpzd5gLOVgdnn8RlfwU5kJ5~~WIrmZ5DmWbO~aYET8LsC3l9juyOtAhE52EgcmpBf~xCU-uyUk-V5vsZWM3mxDD16smZjfpaHg4g46TyzKi2Scn6ns9ETHjJRDo24cejpw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
       imageSrc: reactMovie,
       url: "https://github.com/jwinbush/movie",
       demo: "https://intelo.vercel.app",
     },
     {
       id: 2,
-      video: "https://cdn-cf-east.streamable.com/video/mp4/euq4g0.mp4?Expires=1672268640&Signature=Y8JBxaVoIgZlDlvp~~BZNkVYVJYbaeWw8ypL~eFRu36lYZJWVM8cjjMzPr8ExBBt0oW6sWzJFFYj~QGNKX5eNNWNgTf5dKHTsthiVLOYFokMS8zjXcC3LUZdK0QLw-NS213PgymxyU3v5hTIyL51RfSMk-8qmfsIZNgWtWyZZMh-O6kmX20pwC5IYG1dlV6PHL7Xn1raaC8SzAfi1-eDJOsQKoiFmHh3psj5EfBixT0IHyoTtyui28rwKj4pScANM0be1lrYlSXqdVecTfsK3sigl4hRnupMcyt9VlUM1hVyHp~M558JFjikccUQox0My9qvZX75t1D-K193HypSBA__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
+      video: "https://cdn-cf-east.streamable.com/video/mp4/euq4g0.mp4?Expires=1673419380&Signature=YugBnOJTIkP74vtEn38VpIo8TdOs-TNFc6KCMN7Fcyf7bWAOQDklV9Ign4t2LSTA-MbC-ZXRQdhfqw5TqMrjaquQja5A~eFfmxHcgwWgqGtuRtguKTutQ-HAbNFRwy6qK53nO-V39fVirf12JrQ3jRw2kzkt4rcum-uS1skwWJDtJR8Y6rExr3iIl1e0o2tjg378GO8Sr3M-ea~NtxHlt0JLNyCvL-qoyelikAdZQr0XziVS2qsnP8aF4bEsKU2eig56km~ZcLOHTdfmfM6JfI6c3JE5lLCqQ4Zvvt8Ye4fgLVAPV6qWdok7fafc9jCmLbS4wtJ3Ke8I-fnEEioVfg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
       imageSrc: nextSpotify,
       url: "https://github.com/jwinbush/spotify",
       demo: "https://www.jawonwinbush.com/login",
     },
     {
       id: 3,
-      video: "https://cdn-cf-east.streamable.com/video/mp4/jcljj3.mp4?Expires=1672268640&Signature=Yx74v62KA~h34AKBGHQW65YgfAn5aGIyApDjBsoMaIrzxoYAf9EMASjefhZ4xsPzhOoH6EqTAU2ixWweoaLifDCn0VLh65zO8FPpLrgehAa8fGNARkAGgj9GSIGKD-OFxrXacYPyE6P9WPp~f~bfLS1vwBkeT7xh2o2sIrXJ6rVpxHuMh~wjsDv0HFRrSqoRMmZb9wA1BneiyjIT0XZPkfvJuKLL30jSy16SwjjPJPfC6XQMLovdcraJSbUecw0bm-Q75H5CDLFAnVdjXIq~c72ezdTSnrCAlDrPU1x9su8b541q5xzVZBXiR1XZml3iziM6m9r4ZfR69-fHKgvBlw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
+      video: "https://cdn-cf-east.streamable.com/video/mp4/jcljj3.mp4?Expires=1673419380&Signature=QcEXKSHQCas6BNzg5VgmJNtAxzkvVb5aOkN8RC1Y7ibMHBeJn2Fu5FS1tZnqJg-P5kRrjpEzbO6LyMGHdkobQSCRD1b6ToaKJm4o1BtyLuuxgQZFUm4fE1wFZiuACGBEEPUcG7xP~ybLWg3cBSZ4kGY9JFTCvzMHbZDIvwYt9lja8Grrg5FC9B-JWlbI6nbS5hAjOAaerN4zG8W2h6EUGZ27B9LI82h3MOEF4Ec4Vae6LFlv1YhZbfH1TNuEFb1Jgtbrt2KuIk9qGlOXKFPPNOGhVFhab2GYIQRwGDvtwxEKz2R1RyGI1XvwXQyZGpdd3UjvM8BErd3YXTntshv26g__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
       imageSrc: phpRental,
       url: "https://github.com/jwinbush/OdysseyRentals",
       demo: "",
