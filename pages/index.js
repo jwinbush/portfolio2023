@@ -45,27 +45,27 @@ export default function Home() {
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl dark:text-yellow-500 fixed h-432 mb-auto z-50 "
                 />
-          <nav className="py-10 mb-6 md:mb-12 flex justify-between dark:text-white ">
+          <nav className="py-10 mb-6 md:mb-12 flex justify-between text-white dark:text-black ">
             <h1 className="text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 font-extrabold">WΦN</h1>
             <ul className="flex items-center">
               <div className="navbar flex">
               <li>
               <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600 px-4 py-2 border-none rounded-md ml-8"
                   href="#About"
                 >
                   About
                 </a>              </li>
               <li>
               <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600  px-4 py-2 border-none rounded-md ml-8"
                   href="#Skills"
                 >
                   Skills
                 </a>              </li> 
               <li>
               <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600 px-4 py-2 border-none rounded-md ml-8"
                   href="#Projects"
                 >
                   Projects
@@ -74,7 +74,7 @@ export default function Home() {
               
               <li>
                 <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600  px-4 py-2 border-none rounded-md ml-8"
                   href="#Contact"
                 >
                   Contact
@@ -82,8 +82,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-blue-500 text- to-blue-600 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  className="text-md md:text-xl font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600  px-4 py-2 border-none rounded-md ml-8"
+                  href="https://github.com/jwinbush" target={"_blank"}
                 >
                   GitHub
                 </a>
@@ -92,7 +92,7 @@ export default function Home() {
 
               <li>
                 
-                   <BsList className=" bslist cursor-pointer text-3xl invisible"/>
+                   <BsList className=" bslist cursor-pointer text-3xl invisible dark:text-white text-black"/>
                 
               </li>
             </ul>
