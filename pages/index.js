@@ -79,7 +79,6 @@ export default function Home() {
                     Contact
                   </a>
                 </li>
-
               </div>
 
               <li>
@@ -365,7 +364,7 @@ export default function Home() {
           <Portfolio />
           <div>
             <h3
-              className="text-3xl md:text-5xl font-semibold py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"
+              className="text-3xl md:text-5xl font-semibold pt-24 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"
               id="Contact"
             >
               Contact me
@@ -373,7 +372,64 @@ export default function Home() {
             <p className="md:text-3xl text-lg py-2 leading-8 text-gray-800 dark:text-gray-200 text-center pb-6">
               Let's talk.
             </p>
-            
+            <section>
+              <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <form action="mailto:jawonwinbush@gmail.com"
+                method="POST" className="space-y-8">
+                  <div>
+                    <label
+                      for="email"
+                      className="block mb-2 text-lg font-medium text-black dark:text-white"
+                    >
+                      Your email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-black text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      placeholder="name@flowbite.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="subject"
+                      className="block mb-2 text-lg font-medium text-black dark:text-white"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      className="block p-3 w-full text-lg text-black dark:text-white bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      placeholder="Your subject..."
+                      required
+                    />
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label
+                      for="message"
+                      className="block mb-2 text-lg font-medium text-black dark:text-white"
+                    >
+                      Your message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows="6"
+                      className="block p-2.5 w-full text-lg text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      placeholder="Leave a comment..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="py-3 px-5 text-lg font-medium text-center dark:text-white sm:w-fit focus:ring-4 focus:outline-none bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md"
+                  >
+                    Send message
+                  </button>
+                </form>
+              </div>
+            </section>
+
           </div>
           <footer>
             <div className="text-5xl flex justify-center gap-16 py-3 text-black dark:text-white">
@@ -387,12 +443,20 @@ export default function Home() {
                 <AiFillGithub className="hover:cursor-pointer" />
               </a>
             </div>
+
             <div>
               <p className="text-black dark:text-white md:text-lg text-md text-center">
-                Designed and developed by Jawon Winbush.
+                Email: jawonwinbush@gmail.com
+              </p>
+              <p className="text-black dark:text-white md:text-lg text-md text-center">
+                Phone: (317) 654-4324
+              </p>
+              <p className="text-black dark:text-white md:text-lg text-md text-center pt-10">
+                Designed and developed by Jawon Winbush. (2023)
               </p>
             </div>
           </footer>
+          
         </section>
       </m.main>
     </div>
