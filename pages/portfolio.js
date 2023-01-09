@@ -3,6 +3,7 @@ import phpRental from "../public/oddrent.png";
 import reactMovie from "../public/InteloHome.png";
 import nextSpotify from "../public/nextSpotify.jpg";
 import HoverVideoPlayer from "react-hover-video-player";
+
 import Image from "next/image";
 import {
     AiFillGithub,
