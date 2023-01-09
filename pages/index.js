@@ -387,7 +387,7 @@ export default function Home() {
                       type="email"
                       id="email"
                       className="shadow-sm bg-gray-50 border border-gray-300 text-black text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder="name@flowbite.com"
+                      placeholder="name@example.com"
                       required
                     />
                   </div>
@@ -422,7 +422,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="py-3 px-5 text-lg font-medium text-center dark:text-white sm:w-fit focus:ring-4 focus:outline-none bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md"
+                    className="py-3 px-5 text-lg font-medium dark:text-white sm:w-fit focus:ring-4 focus:outline-none bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md"
                   >
                     Send message
                   </button>
