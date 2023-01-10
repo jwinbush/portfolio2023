@@ -3,7 +3,7 @@ import Portfolio from "../pages/portfolio";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonFill, BsList } from "react-icons/bs";
 import { useState } from "react";
-import jawon from "../public/PortraitofMe2.jpg";
+import jawon from "../public/portraitOfMe2.jpg";
 import backend from "../public/backend.png";
 import frontend from "../public/frontend.png";
 import more from "../public/more.png";
