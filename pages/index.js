@@ -2,13 +2,13 @@ import Head from "next/head";
 import Portfolio from "../pages/portfolio";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonFill, BsList } from "react-icons/bs";
-import { useState } from "react";
-import jawon from "../public/portraitOfMe2.jpg";
+import { useEffect, useState } from "react";
 import backend from "../public/backend.png";
 import frontend from "../public/frontend.png";
 import more from "../public/more.png";
 import Image from "next/image";
 import { motion as m } from "framer-motion";
+import Type from "./type";
 
 export default function Home() {
   {
@@ -16,6 +16,18 @@ export default function Home() {
   }
   const [darkMode, setDarkMode] = useState(false);
 
+  {
+    /* Navbar color change */
+  }
+  const [pageScroll, setPageScroll] = useState(false);
+
+  useEffect(() => {
+    const sub = window.addEventListener("scroll", () =>
+      setPageScroll(window.scrollY >= 90)
+    );
+
+    return sub;
+  }, []);
   return (
     <div loading="lazy" className={darkMode ? "dark" : ""}>
       {/* Head Section */}
@@ -46,7 +58,7 @@ export default function Home() {
                     href="#About"
                   >
                     About
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
                   <a
@@ -54,7 +66,7 @@ export default function Home() {
                     href="#Skills"
                   >
                     Skills
-                  </a>{" "}
+                  </a>
                 </li>
                 <li>
                   <a
@@ -73,6 +85,8 @@ export default function Home() {
                     Contact
                   </a>
                 </li>
+
+                
               </div>
 
               <li>
@@ -83,7 +97,7 @@ export default function Home() {
               </li>
 
               <li>
-                <BsList className=" bslist cursor-pointer text-3xl invisible dark:text-white text-black" />
+                <BsList className=" cursor-pointer text-3xl md:hidden dark:text-white text-black" />
               </li>
             </ul>
           </nav>
@@ -96,7 +110,7 @@ export default function Home() {
               BUSH.
             </h2>
             <h3 className="text-2xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 md:text-4xl font-semibold ">
-              Software developer and UX designer.
+              <Type />
             </h3>
 
             <div className="content md:justify-between justify-center flex pt-10">
@@ -106,20 +120,19 @@ export default function Home() {
                 in programming, UX design, and data management. A well-organised
                 person, problem solver, independent employee with high attention
                 to detail. My objective is to develop websites and applications
-                that make a difference. When I'm not coding I enjoy reading,
-                watching diy videos, tuning into fútbol, and exercising. If you
+                that make a difference. When I'm not coding I enjoy reading, watching fútbol, and exercising. If you
                 have a project in mind or would like to make an enquiry simply
                 contact me below.
               </p>
 
-              <div className=" hero mx-auto bg-white-500 rounded-2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
+              {/* <div className=" hero mx-auto bg-white-500 rounded-2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
                 <Image
                   src={jawon}
                   layout="fill"
                   objectFit="cover"
                   className="object-top"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -368,8 +381,11 @@ export default function Home() {
             </p>
             <section>
               <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <form action="mailto:jawonwinbush@gmail.com"
-                method="POST" className="space-y-8">
+                <form
+                  action="mailto:jawonwinbush@gmail.com"
+                  method="POST"
+                  className="space-y-8"
+                >
                   <div>
                     <label
                       for="email"
@@ -423,7 +439,6 @@ export default function Home() {
                 </form>
               </div>
             </section>
-
           </div>
           <footer>
             <div className="text-5xl flex justify-center gap-16 py-3 text-black dark:text-white">
@@ -438,19 +453,13 @@ export default function Home() {
               </a>
             </div>
 
-            <div>
-              <p className="text-black dark:text-white md:text-lg text-md text-center">
-                Email: jawonwinbush@gmail.com
-              </p>
-              <p className="text-black dark:text-white md:text-lg text-md text-center">
-                Phone: (317) 654-4324
-              </p>
-              <p className="text-black dark:text-white md:text-lg text-md text-center pt-10">
+            <div className="flex justify-center gap-10 text-black dark:text-white md:text-md text-sm text-center">
+              <p>jawonwinbush@gmail.com</p>
+              <p className="hidden md:flex">
                 Designed and developed by Jawon Winbush. (2023)
               </p>
             </div>
           </footer>
-          
         </section>
       </m.main>
     </div>
