@@ -1,6 +1,11 @@
 import Head from "next/head";
 import Portfolio from "../pages/portfolio";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+  AiOutlinePhone,
+} from "react-icons/ai";
 import { BsFillMoonFill, BsList } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import backend from "../public/backend.png";
@@ -85,8 +90,6 @@ export default function Home() {
                     Contact
                   </a>
                 </li>
-
-                
               </div>
 
               <li>
@@ -120,9 +123,9 @@ export default function Home() {
                 in programming, UX design, and data management. A well-organised
                 person, problem solver, independent employee with high attention
                 to detail. My objective is to develop websites and applications
-                that make a difference. When I'm not coding I enjoy reading, watching fútbol, and exercising. If you
-                have a project in mind or would like to make an enquiry simply
-                contact me below.
+                that make a difference. When I'm not coding I enjoy reading,
+                watching fútbol, and exercising. If you have a project in mind
+                or would like to make an enquiry simply contact me below.
               </p>
 
               {/* <div className=" hero mx-auto bg-white-500 rounded-2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
@@ -153,8 +156,6 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
               <h3 className="text-xl pt-8 pb-2 font-bold">Frontend</h3>
-
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
 
               <p className="text-gray-800 py-1 ">HTML</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -214,8 +215,6 @@ export default function Home() {
                 alt="Hero"
               />
               <h3 className="text-xl pt-8 pb-2 font-bold">Backend</h3>
-
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
 
               <p className="text-gray-800 py-1 ">SQL & MySQL</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -300,8 +299,6 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
               <h3 className="text-xl pt-8 pb-2 font-bold">More</h3>
-
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 ">
                 Visual Studio Code & Visual Studio
               </p>
@@ -344,6 +341,16 @@ export default function Home() {
                 </div>
               </div>
 
+              <p className="text-gray-800 py-1 ">WordPress</p>
+              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div
+                  className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                  style={{ width: "84%" }}
+                >
+                  84%
+                </div>
+              </div>
+
               <p className="text-gray-800 py-1 ">Figma</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                 <div
@@ -380,7 +387,7 @@ export default function Home() {
               Let's talk.
             </p>
             <section>
-              <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              {/* <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <form
                   action="mailto:jawonwinbush@gmail.com"
                   method="POST"
@@ -437,11 +444,17 @@ export default function Home() {
                     Send message
                   </button>
                 </form>
-              </div>
+              </div> */}
             </section>
           </div>
           <footer>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-black dark:text-white">
+            <div className="text-5xl flex justify-center gap-10 md:gap-16 py-3 text-black dark:text-white">
+              <a href="mailto:jawonwinbush@gmail.com" target={"_blank"}>
+                <AiOutlineMail className="hover:cursor-pointer" />
+              </a>
+              <a href="tel:3176544324" target={"_blank"}>
+                <AiOutlinePhone className="hover:cursor-pointer" />
+              </a>
               <a
                 href="https://www.linkedin.com/in/jawonmwinbush/"
                 target={"_blank"}
@@ -453,11 +466,8 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex justify-center gap-10 text-black dark:text-white md:text-md text-sm text-center">
-              <p>jawonwinbush@gmail.com</p>
-              <p className="hidden md:flex">
-                Designed and developed by Jawon Winbush. (2023)
-              </p>
+            <div className=" pt-20 text-black dark:text-white md:text-md text-sm text-center">
+              <p>Designed and developed by Jawon Winbush. (2023)</p>
             </div>
           </footer>
         </section>
