@@ -6,7 +6,7 @@ import {
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
-import { BsFillMoonFill, BsList } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs"; //BsList
 import { useEffect, useState } from "react";
 import backend from "../public/backend.png";
 import frontend from "../public/frontend.png";
@@ -99,9 +99,9 @@ export default function Home() {
                 />
               </li>
 
-              <li>
+              {/* <li>
                 <BsList className=" cursor-pointer text-3xl md:hidden dark:text-white text-black" />
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="text-center px-4 md:px-10">
