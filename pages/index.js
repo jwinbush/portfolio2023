@@ -121,7 +121,7 @@ export default function Home() {
                 Currently studying informatics at IUPUI and graduating in May of
                 2023. A versatile software developer with 3+ years of experience
                 in programming, UX design, and data management. A well-organised
-                person, problem solver, independent employee with high attention
+                person, problem solver, and independent employee with high attention
                 to detail. My objective is to develop websites and applications
                 that make a difference. When I'm not coding I enjoy reading,
                 watching fútbol, and exercising. If you have a project in mind
