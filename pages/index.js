@@ -18,14 +18,14 @@ import { shuffle } from "lodash"; // npm i lodash
 
 const textColor = [
   "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
+  // "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
+  // "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
 ];
 
 const logoColor = [
   "bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
-  "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
-  "bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
+  // "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
+  // "bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <div className="navbar flex">
-                <li>
+                <li className="about">
                   <a
                     className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#About"
@@ -80,7 +80,7 @@ export default function Home() {
                     About
                   </a>
                 </li>
-                <li>
+                <li className="skills">
                   <a
                     className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Skills"
@@ -88,7 +88,7 @@ export default function Home() {
                     Skills
                   </a>
                 </li>
-                <li>
+                <li className="projects">
                   <a
                     className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Projects"
@@ -97,7 +97,7 @@ export default function Home() {
                   </a>
                 </li>
 
-                <li>
+                <li className="contact">
                   <a
                     className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Contact"
