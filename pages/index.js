@@ -14,25 +14,29 @@ import more from "../public/more.png";
 import Image from "next/image";
 import { motion as m } from "framer-motion";
 import Type from "./type";
+import { shuffle } from "lodash"; // npm i lodash
+
+const textColor = [
+  "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600",
+];
 
 export default function Home() {
+  const [text, setText] = useState(null);
+
+  useEffect(() => {
+    setText(shuffle(textColor).pop());
+  }); //changes when refreshed
+
   {
     /* Dark mode and Light mode */
   }
   const [darkMode, setDarkMode] = useState(false);
 
-  {
-    /* Navbar color change */
-  }
-  const [pageScroll, setPageScroll] = useState(false);
-
-  useEffect(() => {
-    const sub = window.addEventListener("scroll", () =>
-      setPageScroll(window.scrollY >= 90)
-    );
-
-    return sub;
-  }, []);
   return (
     <div loading="lazy" className={darkMode ? "dark" : ""}>
       {/* Head Section */}
@@ -51,15 +55,15 @@ export default function Home() {
         id="About"
       >
         <section className="min-h-screen">
-          <nav className="py-10 mb-6 md:mb-12 flex justify-between text-white dark:text-black ">
-            <h1 className="text-3xl md:text-5xl bg-gradient-to-r from-yellow-400 to-yellow-600 px-1 rounded-md">
+          <nav className="py-10 mb-6 md:mb-12 flex justify-between">
+            <h1 className="text-white text-3xl md:text-5xl px-1 rounded-md bg-black  dark:bg-white dark:text-black">
               WΦN
             </h1>
             <ul className="flex items-center">
               <div className="navbar flex">
                 <li>
                   <a
-                    className="text-md md:text-2xl font-semibold text-yellow-500 px-4 py-2 border-none ml-8"
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#About"
                   >
                     About
@@ -67,7 +71,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="text-md md:text-2xl font-semibold text-yellow-500 px-4 py-2 border-none ml-8"
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Skills"
                   >
                     Skills
@@ -75,7 +79,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="text-md md:text-2xl font-semibold text-yellow-500 px-4 py-2 border-none ml-8"
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Projects"
                   >
                     Projects
@@ -84,7 +88,7 @@ export default function Home() {
 
                 <li>
                   <a
-                    className="text-md md:text-2xl font-semibold text-yellow-500 px-4 py-2 border-none ml-8"
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
                     href="#Contact"
                   >
                     Contact
@@ -107,12 +111,10 @@ export default function Home() {
           <div className="text-center px-4 md:px-10">
             <h2 className="text-3xl font-bold	md:text-7xl dark:text-white">
               Greetings, my name is JA
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-                WON WIN
-              </span>
+              <span className={`${text}`}>WON WIN</span>
               BUSH.
             </h2>
-            <h3 className="text-2xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600 md:text-4xl font-semibold ">
+            <h3 className={`text-2xl py-2 ${text} md:text-4xl font-semibold`}>
               <Type />
             </h3>
 
@@ -121,11 +123,12 @@ export default function Home() {
                 Currently studying informatics at IUPUI and graduating in May of
                 2023. A versatile software developer with 3+ years of experience
                 in programming, UX design, and data management. A well-organised
-                person, problem solver, and independent employee with high attention
-                to detail. My objective is to develop websites and applications
-                that make a difference. When I'm not coding I enjoy reading,
-                watching fútbol, and exercising. If you have a project in mind
-                or would like to make an enquiry simply contact me below.
+                person, problem solver, and independent employee with high
+                attention to detail. My objective is to develop websites and
+                applications that make a difference. When I'm not coding I enjoy
+                reading, watching fútbol, and exercising. If you have a project
+                in mind or would like to make an enquiry simply contact me
+                below.
               </p>
 
               {/* <div className=" hero mx-auto bg-white-500 rounded-2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
@@ -143,7 +146,7 @@ export default function Home() {
         <section>
           <div>
             <h3
-              className="text-3xl md:text-5xl font-semibold pt-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"
+              className={`text-3xl md:text-5xl font-semibold pt-20 text-center ${text}`}
               id="Skills"
             >
               Skills
@@ -366,7 +369,7 @@ export default function Home() {
         <section className="py-10">
           <div>
             <h3
-              className="text-3xl md:text-5xl font-semibold py-1 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"
+              className={`text-3xl md:text-5xl font-semibold py-1 text-center ${text}`}
               id="Projects"
             >
               Projects
@@ -378,7 +381,7 @@ export default function Home() {
           <Portfolio />
           <div>
             <h3
-              className="text-3xl md:text-5xl font-semibold pt-24 text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"
+              className={`text-3xl md:text-5xl font-semibold pt-24 text-center ${text}`}
               id="Contact"
             >
               Contact me
