@@ -19,18 +19,29 @@ import { shuffle } from "lodash"; // npm i lodash
 const textColor = [
   "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
   "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600",
   "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600",
+];
+
+const logoColor = [
+  "bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
+  "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
+  "bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
 
 export default function Home() {
+
   const [text, setText] = useState(null);
 
   useEffect(() => {
     setText(shuffle(textColor).pop());
   }); //changes when refreshed
+
+  const [logo, setLogo] = useState(null);
+
+  useEffect(() => {
+    setLogo(shuffle(logoColor).pop());
+  }); //changes when refreshed
+
 
   {
     /* Dark mode and Light mode */
@@ -56,7 +67,7 @@ export default function Home() {
       >
         <section className="min-h-screen">
           <nav className="py-10 mb-6 md:mb-12 flex justify-between">
-            <h1 className="text-white text-3xl md:text-5xl px-1 rounded-md bg-black  dark:bg-white dark:text-black">
+            <h1 className={`text-3xl md:text-5xl px-1 rounded-md ${logo}`}>
               WΦN
             </h1>
             <ul className="flex items-center">
