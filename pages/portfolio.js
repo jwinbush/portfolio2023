@@ -15,7 +15,7 @@ const Portfolio = () => {
         "https://cdn-cf-east.streamable.com/video/mp4/4gooer.mp4?Expires=1674274260&Signature=Flm1e~zHVqeAkDDDdYBAug8b8GV4skb6a0l4ywgnzbX1vGtizlvYirZzgdYQaWB3PCwEVrPseT6Bg456mQzzdDNn8abewrGemW~~zO75zBdsJ1l18YohkeXlpREDOzoP9n7YQb3SxMK4qgo0LORBgzsZSREABzOTOGPIqod4oFg~MhMVcwK3Ize~Jz8w04OZe3JFt9bmVR7zKPQrqVogaGpXsDn-w3ZwC9DRpSFb-W3yXnzOvGYUxNpnMPpJfkb0ay2psMYMYVNEbrfBF1lqpACMwv-FxmEAuodrQ3hjYsGMIW-5S62n-TBLa6fBZ-LSKqJvmnWJVwsV8SK4yog8nQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
       imageSrc: reactMovie,
       url: "https://github.com/jwinbush/movie",
-      demo: "https://intelo.vercel.app",
+      demo: "https://cinefilm.vercel.app",
     },
     {
       id: 2,
@@ -33,13 +33,14 @@ const Portfolio = () => {
       url: "https://github.com/jwinbush/OdysseyRentals",
       demo: "",
     },
-    // {
-    //   id: 4,
-    //   video: "https://cdn-cf-east.streamable.com/video/mp4/jcljj3.mp4?Expires=1671960420&Signature=Modic2Z54FCEKEVdY5kFCHtSW3wap5rgDtHWlociaaF9-ks2b67DPRXCA5v9o-anP6-c1rxupC7H2NTscXpKPP~yl7gRYGGH9N~4HZa~y~Fz-2hgzH6bEE0OY4QHGaEt1UKxheG5zF80yrMY4BINTu2Nrn2Wbboo9eWH3Fg11vP40uW7n5ZWGMwb6qPqYHd1s7lW3-sn5wR8cWTS8UoCci-YU6lRZu1-55aRVhS2Oh56Ch4IAcRPNUt~m9VSWupGuRztI-XAVR4w9WdfmFHEEqPgXvCWrK1GaxlxD8SvswLRPe0ItNbhtLuWs9RdEVAy7ConSrkm4jyOdTsQftzJRg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
-    //   imageSrc: atomicGaming,
-    //   url: "https://github.com/jwinbush/atomicGaming",
-    //   demo: "https://atomicgaming.netlify.app/",
-    // },
+    {
+      id: 4,
+      video:
+        "https://cdn-cf-east.streamable.com/video/mp4/jcljj3.mp4?Expires=1671960420&Signature=Modic2Z54FCEKEVdY5kFCHtSW3wap5rgDtHWlociaaF9-ks2b67DPRXCA5v9o-anP6-c1rxupC7H2NTscXpKPP~yl7gRYGGH9N~4HZa~y~Fz-2hgzH6bEE0OY4QHGaEt1UKxheG5zF80yrMY4BINTu2Nrn2Wbboo9eWH3Fg11vP40uW7n5ZWGMwb6qPqYHd1s7lW3-sn5wR8cWTS8UoCci-YU6lRZu1-55aRVhS2Oh56Ch4IAcRPNUt~m9VSWupGuRztI-XAVR4w9WdfmFHEEqPgXvCWrK1GaxlxD8SvswLRPe0ItNbhtLuWs9RdEVAy7ConSrkm4jyOdTsQftzJRg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
+      imageSrc: atomicGaming,
+      url: "https://github.com/jwinbush/atomicGaming",
+      demo: "https://atomicgaming.netlify.app/",
+    },
   ];
 
   return (
