@@ -133,7 +133,7 @@ export default function Home() {
               <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto text-lg whitespace-pre-line	md:text-3xl font-light mt-4 md:mt-10 ">
                 Currently studying informatics at IUPUI and graduating in May of
                 2023. A versatile software developer with 3+ years of experience
-                in programming, UX design, and project management. A well-organised
+                in programming, UX design, and project management. A well-organized
                 person, problem solver, and independent employee with high
                 attention to detail. My objective is to develop websites and
                 applications that make a difference. When I'm not coding I enjoy
