@@ -15,6 +15,7 @@ import Image from "next/image";
 import { motion as m } from "framer-motion";
 import Type from "./type";
 import { shuffle } from "lodash"; // npm i lodash
+// import jawon from "../public/AIpicture.png";
 
 const textColor = [
   "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
