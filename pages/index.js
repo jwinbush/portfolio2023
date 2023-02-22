@@ -18,15 +18,15 @@ import { shuffle } from "lodash"; // npm i lodash
 // import jawon from "../public/AIpicture.png";
 
 const textColor = [
-  "text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
-  // "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
+  //"text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
   // "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
 ];
 
 const logoColor = [
-  "bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
-  // "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
-  // "bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
+  //"bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
+  "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
+  //"bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
 
 export default function Home() {
@@ -63,13 +63,13 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className=" bg-white px-4 dark:bg-black md:px-10 font-extraOld"
+        className=" bg-white px-4 dark:bg-black md:px-10 font-AldotheApache"
         id="About"
       >
         <section className="min-h-screen">
-          <nav className="py-10 mb-6 md:mb-12 flex justify-between">
-            <h1 className={`text-3xl md:text-5xl px-1 rounded-md ${logo}`}>
-              WΦN
+          <nav className="py-6 mb-6 md:mb-12 flex justify-between">
+            <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
+              JW
             </h1>
             <ul className="flex items-center">
               <div className="navbar flex">
@@ -121,10 +121,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center px-4 md:px-10">
-            <h2 className="text-3xl font-bold	md:text-7xl dark:text-white">
-              Greetings, my name is JA
-              <span className={`${text}`}>WON WIN</span>
-              BUSH.
+            <h2 className="text-5xl font-bold	md:text-9xl dark:text-white">
+              Hello! My name is
+              <span className={`${text}`}> JAWON WINBUSH</span>
+              .
             </h2>
             <h3 className={`text-2xl py-2 ${text} md:text-4xl font-semibold`}>
               <Type />
@@ -134,11 +134,11 @@ export default function Home() {
               <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto text-lg whitespace-pre-line	md:text-3xl font-light mt-4 md:mt-10 ">
                 Currently studying informatics at IUPUI and graduating in May of
                 2023. A versatile software developer with 3+ years of experience
-                in programming, UX design, and project management. A well-organized
+                in programming, UX design, and data management. A well-organized
                 person, problem solver, and independent employee with high
                 attention to detail. My objective is to develop websites and
                 applications that make a difference. When I'm not coding I enjoy
-                reading, watching fútbol, and exercising. If you have a project
+                reading, watching soccer, and exercising. If you have a project
                 in mind or would like to make an enquiry simply contact me
                 below.
               </p>
@@ -174,51 +174,26 @@ export default function Home() {
 
               <p className="text-gray-800 py-1 ">HTML</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "94%" }}
-                >
-                  94%
-                </div>
+                
               </div>
 
               <p className="text-gray-800 py-1 ">CSS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "87%" }}
-                >
-                  87%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">JavaScript</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-yellow-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "77%" }}
-                >
-                  77%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">ReactJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "68%" }}
-                >
-                  68%
-                </div>
+             
               </div>
               <p className="text-gray-800 py-1 ">AngularJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "35%" }}
-                >
-                  35%
-                </div>
+               
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -233,82 +208,42 @@ export default function Home() {
 
               <p className="text-gray-800 py-1 ">SQL & MySQL</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-gray-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "90%" }}
-                >
-                  90%
-                </div>
+              
               </div>
 
               <p className="text-gray-800 py-1 ">PHP & PhpMyAdmin</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-indigo-300 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "83%" }}
-                >
-                  83%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">NodeJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-lime-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "68%" }}
-                >
-                  68%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">Python & Jupyter Notebook</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-yellow-400 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "68%" }}
-                >
-                  68%
-                </div>
+              
               </div>
 
               <p className="text-gray-800 py-1 ">C#</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-purple-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "39%" }}
-                >
-                  39%
-                </div>
+              
               </div>
 
               <p className="text-gray-800 py-1 ">C++</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "39%" }}
-                >
-                  37%
-                </div>
+              
               </div>
 
               <p className="text-gray-800 py-1 ">ASP.NET</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "35%" }}
-                >
-                  35%
-                </div>
+                
               </div>
 
               <p className="text-gray-800 py-1 ">Java</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-orange-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "34%" }}
-                >
-                  34%
-                </div>
+              
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -318,62 +253,32 @@ export default function Home() {
                 Visual Studio Code & Visual Studio
               </p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-700 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "95%" }}
-                >
-                  95%
-                </div>
+                
               </div>
 
               <p className="text-gray-800 py-1 ">Adobe Photoshop</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "90%" }}
-                >
-                  90%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">Adobe Illustrator</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-orange-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "86%" }}
-                >
-                  86%
-                </div>
+               
               </div>
 
               <p className="text-gray-800 py-1 ">PhpStorm</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-purple-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "85%" }}
-                >
-                  85%
-                </div>
+                
               </div>
 
               <p className="text-gray-800 py-1 ">WordPress</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-blue-400 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "84%" }}
-                >
-                  84%
-                </div>
+             
               </div>
 
               <p className="text-gray-800 py-1 ">Figma</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div
-                  className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  style={{ width: "83%" }}
-                >
-                  83%
-                </div>
+               
               </div>
             </div>
           </div>
@@ -381,12 +286,12 @@ export default function Home() {
         <section className="py-10">
           <div>
             <h3
-              className={`text-3xl md:text-5xl font-semibold py-1 text-center ${text}`}
+              className={`text-3xl md:text-5xl font-semibold pt-16 text-center ${text}`}
               id="Projects"
             >
               Projects
             </h3>
-            <p className="md:text-3xl text-lg py-2 leading-8 text-gray-800 dark:text-gray-200 text-center pb-6">
+            <p className="md:text-3xl text-lg py-2 leading-8 text-gray-800 dark:text-gray-200 text-center">
               My relevant projects.
             </p>
           </div>

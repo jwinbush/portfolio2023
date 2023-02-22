@@ -17,8 +17,8 @@ a {
 }
 
 @font-face {
-    font-family: "extraOld";
-    src: url("../public/Timeless.ttf");
+    font-family: "AldotheApache";
+    src: url("../public/AldotheApache.ttf");
 }
 
 @media only screen and (max-width: 1300px) {

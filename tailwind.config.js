@@ -8,8 +8,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                extraOld: "extraOld",
-                poppins: ["Poppins", "sans-serif"],
+                Higher: ["Higher"],
+                AldotheApache: ["AldotheApache"],
             },
             height: {
                 '432': '108rem',
