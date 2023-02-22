@@ -63,15 +63,15 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className=" bg-white px-4 dark:bg-black md:px-10 font-AldotheApache"
+        className=" bg-white dark:bg-black  font-AldotheApache"
         id="About"
       >
-        <section className="min-h-screen">
-          <nav className="py-6 mb-6 md:mb-12 flex justify-between">
+        <section className="min-h-screen" >
+          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-white px-4">
             <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
               JW
             </h1>
-            <ul className="flex items-center">
+            <ul className="flex items-center md:px-10 px-4">
               <div className="navbar flex">
                 <li className="about">
                   <a
@@ -111,7 +111,7 @@ export default function Home() {
               <li>
                 <BsFillMoonFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="text-lg md:text-2xl text-black md:dark:text-white dark:text-yellow-500 md:ml-8 mx-4 cursor-pointer"
+                  className="text-lg md:text-2xl  text-white dark:text-black md:ml-8 mx-4 cursor-pointer"
                 />
               </li>
 
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="md:px-10 px-4">
           <div>
             <h3
               className={`text-3xl md:text-5xl font-semibold pt-20 text-center ${text}`}
