@@ -19,13 +19,13 @@ import { shuffle } from "lodash"; // npm i lodash
 
 const textColor = [
   //"text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600",
+  "text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700",
   // "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
 ];
 
 const logoColor = [
   //"bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
-  "bg-gradient-to-r from-red-400 to-red-600 dark:text-black text-white",
+  "bg-gradient-to-r from-red-500 to-red-700 dark:text-black text-white",
   //"bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
 
