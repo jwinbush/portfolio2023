@@ -67,7 +67,7 @@ export default function Home() {
         id="About"
       >
         <section className="min-h-screen" >
-          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-white px-4">
+          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-gray-100 px-4">
             <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
               JW
             </h1>
@@ -173,28 +173,19 @@ export default function Home() {
               <h3 className="text-xl pt-8 pb-2 font-bold">Frontend</h3>
 
               <p className="text-gray-800 py-1 ">HTML</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                
-              </div>
-
+            
               <p className="text-gray-800 py-1 ">CSS</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">JavaScript</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">ReactJS</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
              
               </div>
               <p className="text-gray-800 py-1 ">AngularJS</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image
@@ -212,14 +203,10 @@ export default function Home() {
               </div>
 
               <p className="text-gray-800 py-1 ">PHP & PhpMyAdmin</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">NodeJS</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">Python & Jupyter Notebook</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -257,14 +244,10 @@ export default function Home() {
               </div>
 
               <p className="text-gray-800 py-1 ">Adobe Photoshop</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">Adobe Illustrator</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
 
               <p className="text-gray-800 py-1 ">PhpStorm</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -277,9 +260,7 @@ export default function Home() {
               </div>
 
               <p className="text-gray-800 py-1 ">Figma</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-               
-              </div>
+              
             </div>
           </div>
         </section>
