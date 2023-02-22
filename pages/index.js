@@ -131,7 +131,7 @@ export default function Home() {
             </h3>
 
             <div className="content md:justify-between justify-center flex pt-10">
-              <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto text-lg whitespace-pre-line	md:text-3xl font-light mt-4 md:mt-10 ">
+              <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-lg whitespace-pre-line	md:text-4xl font-light mt-4 md:mt-10 ">
               A versatile software developer with 3+ years of experience
                 in programming, UX design, and data management. A well-organized
                 person, problem solver, and independent employee with high

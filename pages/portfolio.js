@@ -1,6 +1,6 @@
-import atomicGaming from "../public/atomiccapture.png";
+// import atomicGaming from "../public/atomiccapture.png";
 import phpRental from "../public/oddrent.png";
-import reactMovie from "../public/InteloHome.png";
+import reactMovie from "../public/cinefilms.png";
 import nextSpotify from "../public/nextSpotify.jpg";
 import HoverVideoPlayer from "react-hover-video-player";
 
