@@ -67,7 +67,7 @@ export default function Home() {
         id="About"
       >
         <section className="min-h-screen" >
-          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-gray-100 px-4">
+          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-gray-800 px-4">
             <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
               JW
             </h1>
@@ -111,7 +111,7 @@ export default function Home() {
               <li>
                 <BsFillMoonFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="text-lg md:text-2xl  text-white dark:text-black md:ml-8 mx-4 cursor-pointer"
+                  className="text-lg md:text-2xl  text-white dark:text-yellow-500 md:ml-8 mx-4 cursor-pointer"
                 />
               </li>
 
@@ -121,7 +121,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center px-4 md:px-10">
-            <h2 className="text-5xl font-bold	md:text-9xl dark:text-white">
+            <h2 className="text-5xl font-bold	md:text-8xl dark:text-white">
               Hello! My name is
               <span className={`${text}`}> JAWON WINBUSH</span>
               .
@@ -172,19 +172,18 @@ export default function Home() {
               <Image src={frontend} width={100} height={100} />
               <h3 className="text-xl pt-8 pb-2 font-bold">Frontend</h3>
 
+              <p className="text-gray-800 py-1 ">ReactJS</p>
+
+              <p className="text-gray-800 py-1 ">JavaScript</p>
+
+              <p className="text-gray-800 py-1 ">AngularJS</p>
+
+              <p className="text-gray-800 py-1 ">jQuery</p>
+
               <p className="text-gray-800 py-1 ">HTML</p>
             
               <p className="text-gray-800 py-1 ">CSS</p>
-              
-
-              <p className="text-gray-800 py-1 ">JavaScript</p>
-              
-
-              <p className="text-gray-800 py-1 ">ReactJS</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-             
-              </div>
-              <p className="text-gray-800 py-1 ">AngularJS</p>
+          
               
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
