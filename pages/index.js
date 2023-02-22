@@ -6,7 +6,7 @@ import {
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
-import { BsFillMoonFill } from "react-icons/bs"; //BsList
+import { BsFillMoonFill, BsList } from "react-icons/bs"; //BsList
 import { useEffect, useState } from "react";
 import backend from "../public/backend.png";
 import frontend from "../public/frontend.png";
@@ -48,7 +48,7 @@ export default function Home() {
     /* Dark mode and Light mode */
   }
   const [darkMode, setDarkMode] = useState(false);
-
+  const [navShow, setNavbar] = useState(false);
   return (
     <div loading="lazy" className={darkMode ? "dark" : ""}>
       {/* Head Section */}
@@ -63,11 +63,75 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className=" bg-white dark:bg-black  font-AldotheApache"
+        className=" bg-white dark:bg-black uppercase font-AldotheApache"
         id="About"
       >
         <section className="min-h-screen" >
-          <nav className="py-6 mb-6 md:mb-12 flex justify-between bg-black dark:bg-gray-800 px-4">
+        {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a href="https://flowbite.com/" className="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span className="sr-only">Open main menu</span>
+      <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+    <ul className="flex items-center md:px-10 px-4">
+              <div className="navbar flex">
+                <li className="about">
+                  <a
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
+                    href="#About"
+                  >
+                    About
+                  </a>
+                </li>
+                <li className="skills">
+                  <a
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
+                    href="#Skills"
+                  >
+                    Skills
+                  </a>
+                </li>
+                <li className="projects">
+                  <a
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
+                    href="#Projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+
+                <li className="contact">
+                  <a
+                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
+                    href="#Contact"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </div>
+
+              <li>
+                <BsFillMoonFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="text-lg md:text-2xl  text-white dark:text-yellow-500 md:ml-8 mx-4 cursor-pointer"
+                />
+              </li>
+
+              <li>
+
+                <BsList
+                className=" cursor-pointer text-3xl md:hidden dark:text-white text-black" />
+              </li>
+            </ul>
+    </div>
+  </div>
+</nav> */}
+          <nav className="py-4 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
             <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
               JW
             </h1>
@@ -115,12 +179,14 @@ export default function Home() {
                 />
               </li>
 
-              {/* <li>
-                <BsList className=" cursor-pointer text-3xl md:hidden dark:text-white text-black" />
-              </li> */}
+              <li>
+
+                <BsList
+                className=" cursor-pointer text-3xl md:hidden text-white" />
+              </li>
             </ul>
           </nav>
-          <div className="text-center px-4 md:px-10">
+          <div className="text-center px-4 md:px-10 pt-36">
             <h2 className="text-5xl font-bold	md:text-8xl dark:text-white">
               Hello! My name is
               <span className={`${text}`}> JAWON WINBUSH</span>
