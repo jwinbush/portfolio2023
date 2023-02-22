@@ -126,14 +126,13 @@ export default function Home() {
               <span className={`${text}`}> JAWON WINBUSH</span>
               .
             </h2>
-            <h3 className={`text-2xl py-2 ${text} md:text-4xl font-semibold`}>
+            <h3 className={`text-2xl py-2 ${text} md:text-5xl font-semibold`}>
               <Type />
             </h3>
 
             <div className="content md:justify-between justify-center flex pt-10">
               <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto text-lg whitespace-pre-line	md:text-3xl font-light mt-4 md:mt-10 ">
-                Currently studying informatics at IUPUI and graduating in May of
-                2023. A versatile software developer with 3+ years of experience
+              A versatile software developer with 3+ years of experience
                 in programming, UX design, and data management. A well-organized
                 person, problem solver, and independent employee with high
                 attention to detail. My objective is to develop websites and
@@ -170,7 +169,7 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
-              <h3 className="text-xl pt-8 pb-2 font-bold">Frontend</h3>
+              <h3 className="text-2xl pt-8 pb-2 font-bold">Frontend</h3>
 
               <p className="text-gray-800 py-1 ">ReactJS</p>
 
@@ -194,7 +193,7 @@ export default function Home() {
                 height={100}
                 alt="Hero"
               />
-              <h3 className="text-xl pt-8 pb-2 font-bold">Backend</h3>
+              <h3 className="text-2xl pt-8 pb-2 font-bold">Backend</h3>
 
               <p className="text-gray-800 py-1 ">SQL & MySQL</p>
               <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
@@ -234,7 +233,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
-              <h3 className="text-xl pt-8 pb-2 font-bold">More</h3>
+              <h3 className="text-2xl pt-8 pb-2 font-bold">More</h3>
               <p className="text-gray-800 py-1 ">
                 Visual Studio Code & Visual Studio
               </p>
