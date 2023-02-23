@@ -16,7 +16,10 @@ import Image from "next/image";
 import { motion as m } from "framer-motion";
 import Type from "./type";
 import { shuffle } from "lodash"; // npm i lodash
+// import $ from "jquery";
 // import jawon from "../public/AIpicture.png";
+
+// import { Link } from 'react-router-dom';
 
 const textColor = [
   //"text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
@@ -29,6 +32,12 @@ const logoColor = [
   "bg-gradient-to-r from-sky-400 to-teal-400 dark:text-black text-white",
   //"bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
+
+// $(function() {
+//   $('#open').click(function() {
+//     $('#list').toggle();
+//   });
+// })
 
 export default function Home() {
   const [text, setText] = useState(null);
@@ -67,35 +76,36 @@ export default function Home() {
       >
         <section className="min-h-screen">
           {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 flex-grow flex">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-              <a href="https://flowbite.com/" class="flex items-center">
+            <div  className="container flex flex-wrap items-center justify-between mx-auto">
+              <a href="https://flowbite.com/"  className="flex items-center">
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
-                  class="h-6 mr-3 sm:h-9"
+                   className="h-6 mr-3 sm:h-9"
                   alt="Flowbite Logo"
                 />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+                <span  className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                   Flowbite
                 </span>
               </a>
               <button
                 data-collapse-toggle="navbar-default"
                 type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                 className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default"
                 aria-expanded="false"
               >
                 <BsList
-                  className=" cursor-pointer text-3xl md:hidden text-white"
+                  id="list"
+                  className=" cursor-pointer text-3xl md:hidden text-black dark:text-white"
                   aria-hidden="true"
                 />
               </button>
-              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <div  className="hidden w-full md:block md:w-auto" id="navbar-open">
+                <ul  className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                       className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                       aria-current="page"
                     >
                       Home
@@ -104,7 +114,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       About
                     </a>
@@ -112,7 +122,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Services
                     </a>
@@ -120,7 +130,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Pricing
                     </a>
@@ -128,7 +138,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Contact
                     </a>
@@ -145,7 +155,7 @@ export default function Home() {
               height={60}
             />
 
-            <ul className="flex items-center md:px-10 px-4">
+            <ul id="open"className="flex items-center md:px-10 px-4">
               <div className="navbar flex">
                 <li className="about">
                   <a
@@ -189,9 +199,9 @@ export default function Home() {
                 />
               </li>
 
-              <li>
-                <BsList className=" cursor-pointer text-3xl md:hidden text-white" />
-              </li>
+              {/* <li>
+                <BsList className="cursor-pointer text-3xl md:hidden text-white" id="list"/>
+              </li> */}
             </ul>
           </nav>
           <div className="text-center px-4 md:px-10 pt-36">
@@ -361,7 +371,7 @@ export default function Home() {
                       required
                     />
                   </div>
-                  <div class="sm:col-span-2">
+                  <div  className="sm:col-span-2">
                     <label
                       for="message"
                       className="block mb-2 text-lg font-medium text-black dark:text-white"
