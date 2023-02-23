@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import backend from "../public/backend.png";
 import frontend from "../public/frontend.png";
 import more from "../public/more.png";
+import mainlogo from "../public/logo.png";
 import Image from "next/image";
 import { motion as m } from "framer-motion";
 import Type from "./type";
@@ -19,18 +20,17 @@ import { shuffle } from "lodash"; // npm i lodash
 
 const textColor = [
   //"text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600",
-  "text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700",
+  "text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-teal-400",
   // "text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600",
 ];
 
 const logoColor = [
   //"bg-gradient-to-r from-yellow-400 to-yellow-600 dark:text-black text-white",
-  "bg-gradient-to-r from-red-500 to-red-700 dark:text-black text-white",
+  "bg-gradient-to-r from-sky-400 to-teal-400 dark:text-black text-white",
   //"bg-gradient-to-r from-orange-400 to-orange-600 dark:text-black text-white",
 ];
 
 export default function Home() {
-
   const [text, setText] = useState(null);
 
   useEffect(() => {
@@ -43,12 +43,11 @@ export default function Home() {
     setLogo(shuffle(logoColor).pop());
   }); //changes when refreshed
 
-
   {
     /* Dark mode and Light mode */
   }
   const [darkMode, setDarkMode] = useState(false);
-  const [navShow, setNavbar] = useState(false);
+
   return (
     <div loading="lazy" className={darkMode ? "dark" : ""}>
       {/* Head Section */}
@@ -66,75 +65,86 @@ export default function Home() {
         className=" bg-white dark:bg-black uppercase font-AldotheApache"
         id="About"
       >
-        <section className="min-h-screen" >
-        {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-  <div class="container flex flex-wrap items-center justify-between mx-auto">
-    <a href="https://flowbite.com/" className="flex items-center">
-        <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-      <span className="sr-only">Open main menu</span>
-      <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-    <ul className="flex items-center md:px-10 px-4">
-              <div className="navbar flex">
-                <li className="about">
-                  <a
-                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
-                    href="#About"
-                  >
-                    About
-                  </a>
-                </li>
-                <li className="skills">
-                  <a
-                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
-                    href="#Skills"
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li className="projects">
-                  <a
-                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
-                    href="#Projects"
-                  >
-                    Projects
-                  </a>
-                </li>
-
-                <li className="contact">
-                  <a
-                    className={`text-md md:text-2xl font-semibold px-4 py-2 border-none ml-8 ${text}`}
-                    href="#Contact"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </div>
-
-              <li>
-                <BsFillMoonFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="text-lg md:text-2xl  text-white dark:text-yellow-500 md:ml-8 mx-4 cursor-pointer"
+        <section className="min-h-screen">
+          {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 flex-grow flex">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+              <a href="https://flowbite.com/" class="flex items-center">
+                <img
+                  src="https://flowbite.com/docs/images/logo.svg"
+                  class="h-6 mr-3 sm:h-9"
+                  alt="Flowbite Logo"
                 />
-              </li>
-
-              <li>
-
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+                  Flowbite
+                </span>
+              </a>
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
                 <BsList
-                className=" cursor-pointer text-3xl md:hidden dark:text-white text-black" />
-              </li>
-            </ul>
-    </div>
-  </div>
-</nav> */}
-          <nav className="py-4 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
-            <h1 className={`text-3xl md:text-5xl px-4 rounded-md ${logo}`}>
-              JW
-            </h1>
+                  className=" cursor-pointer text-3xl md:hidden text-white"
+                  aria-hidden="true"
+                />
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> */}
+          <nav className=" shadow-2xl py-2 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
+            <Image
+              className={`text-3xl md:text-5xl px-4 rounded-xl`}
+              src={mainlogo}
+              width={60}
+              height={60}
+            />
+
             <ul className="flex items-center md:px-10 px-4">
               <div className="navbar flex">
                 <li className="about">
@@ -180,17 +190,14 @@ export default function Home() {
               </li>
 
               <li>
-
-                <BsList
-                className=" cursor-pointer text-3xl md:hidden text-white" />
+                <BsList className=" cursor-pointer text-3xl md:hidden text-white" />
               </li>
             </ul>
           </nav>
           <div className="text-center px-4 md:px-10 pt-36">
             <h2 className="text-5xl font-bold	md:text-8xl dark:text-white">
               Hello! My name is
-              <span className={`${text}`}> JAWON WINBUSH</span>
-              .
+              <span className={`${text}`}> JAWON WINBUSH</span>.
             </h2>
             <h3 className={`text-2xl py-2 ${text} md:text-5xl font-semibold`}>
               <Type />
@@ -198,8 +205,8 @@ export default function Home() {
 
             <div className="content md:justify-between justify-center flex pt-10">
               <p className=" text-gray-800 dark:text-gray-200 max-w-md md:max-w-4xl mx-auto text-lg whitespace-pre-line	md:text-4xl font-light mt-4 md:mt-10 ">
-              A versatile software developer with 3+ years of experience
-                in programming, UX design, and data management. A well-organized
+                A versatile software developer with 3+ years of experience in
+                programming, UX design, and data management. A well-organized
                 person, problem solver, and independent employee with high
                 attention to detail. My objective is to develop websites and
                 applications that make a difference. When I'm not coding I enjoy
@@ -233,7 +240,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-center shadow-lg dark:shadow-inner p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
               <h3 className="text-2xl pt-8 pb-2 font-bold">Frontend</h3>
 
@@ -246,12 +253,10 @@ export default function Home() {
               <p className="text-gray-800 py-1 ">jQuery</p>
 
               <p className="text-gray-800 py-1 ">HTML</p>
-            
+
               <p className="text-gray-800 py-1 ">CSS</p>
-          
-              
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg dark:shadow-inner p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image
                 priority
                 src={backend}
@@ -262,40 +267,20 @@ export default function Home() {
               <h3 className="text-2xl pt-8 pb-2 font-bold">Backend</h3>
 
               <p className="text-gray-800 py-1 ">SQL & MySQL</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-              
-              </div>
 
               <p className="text-gray-800 py-1 ">PHP & PhpMyAdmin</p>
-              
 
               <p className="text-gray-800 py-1 ">NodeJS</p>
-              
 
               <p className="text-gray-800 py-1 ">Python & Jupyter Notebook</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-              
-              </div>
 
               <p className="text-gray-800 py-1 ">C#</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-              
-              </div>
 
               <p className="text-gray-800 py-1 ">C++</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-              
-              </div>
 
               <p className="text-gray-800 py-1 ">ASP.NET</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                
-              </div>
 
               <p className="text-gray-800 py-1 ">Java</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-              
-              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
@@ -303,28 +288,16 @@ export default function Home() {
               <p className="text-gray-800 py-1 ">
                 Visual Studio Code & Visual Studio
               </p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                
-              </div>
 
               <p className="text-gray-800 py-1 ">Adobe Photoshop</p>
-              
 
               <p className="text-gray-800 py-1 ">Adobe Illustrator</p>
-              
 
               <p className="text-gray-800 py-1 ">PhpStorm</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                
-              </div>
 
               <p className="text-gray-800 py-1 ">WordPress</p>
-              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-             
-              </div>
 
               <p className="text-gray-800 py-1 ">Figma</p>
-              
             </div>
           </div>
         </section>
