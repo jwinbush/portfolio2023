@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </div>
           </nav> */}
-          <nav className=" shadow-2xl py-2 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
+          <nav className=" shadow-xl py-2 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
             <Image
               className={`text-3xl md:text-5xl px-4 rounded-xl`}
               src={mainlogo}
