@@ -59,7 +59,7 @@ const Portfolio = () => {
           {portfolios.map(({ video, imageSrc, description, url, demo }) => (
             
             <div className="cursor-pointer group shadow-lg overflow-hidden bg-white dark:bg-gray-800">
-                 <p className="text-black mb-2 text-center">
+                 <p className="text-black dark:text-white mb-2 text-center">
                   <small>{description}</small>
                 </p>
               <HoverVideoPlayer
@@ -111,7 +111,7 @@ const Portfolio = () => {
                 </div>
 
                 <h5 className="text-lg font-bold mb-3">Sharp Wear </h5>
-                <div className="mb-3 text-black flex items-center justify-center">
+                <div className="mb-3 text-black dark:text-white flex items-center justify-center">
                   <a
                     href="https://github.com/jwinbush/suits2023"
                     target="_blank"
@@ -124,7 +124,7 @@ const Portfolio = () => {
                   <small>ReactJS | jQuery | TailwindCSS</small>
                 </p>
 
-                <p className="text-black">
+                <p className="text-black dark:text-white">
                   I really enjoy creating ReactJS web applications, which drove
                   me to begin working on this ecommerce project. The purpose of
                   this website is to give customers the option to rent or buy
@@ -157,10 +157,10 @@ const Portfolio = () => {
                   The Drug Crisis Throughout the U.S
                 </h5>
 
-                <p className="text-black mb-6">
+                <p className="text-black  dark:text-white mb-6">
                   <small>Tableau | Data Visualization</small>
                 </p>
-                <p className="text-black">
+                <p className="text-black dark:text-white">
                   Drug cases have grew for many years. I
                   decided to created a visualization dashboard, allowing me to
                   observe the growth of cases throughout the last 7 years. This
@@ -188,10 +188,10 @@ const Portfolio = () => {
 
                 <h5 className="text-lg font-bold mb-3">Netflix Viewership</h5>
 
-                <p className="text-black mb-6">
+                <p className="text-black dark:text-white mb-6">
                   <small>Tableau | Data Visualization</small>
                 </p>
-                <p className="text-black">
+                <p className="text-black dark:text-white">
                   This is a Netflix dashboard which reveals the popularity of a
                   tv series or movie. When a user selects a title the
                   description is revealed, as well as the location that has the
