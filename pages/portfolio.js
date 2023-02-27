@@ -88,7 +88,7 @@ const Portfolio = () => {
       {/* <!-- Container for demo purpose --> */}
       <div className="container my-24 px-6 mx-auto">
         {/* <!-- Section: Design Block --> */}
-        <section className="mb-32 text-gray-800 text-center">
+        <section className="mb-32 text-gray-800 dark:text-white text-center">
           <h2 className="md:text-3xl  text-lg font-bold mb-12 text-center dark:text-white">
             What I've been up to lately.
           </h2>
