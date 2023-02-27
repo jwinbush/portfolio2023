@@ -1,11 +1,17 @@
 // import atomicGaming from "../public/atomiccapture.png";
 import phpRental from "../public/oddrent.png";
 import reactMovie from "../public/cinefilms.png";
+import netflix from "../public/NetflixTableau.png";
+import drugCrisis from "../public/DrugCrisis.png";
+
+import suits from "../public/SharpWear.png";
+
 import nextSpotify from "../public/nextSpotify.jpg";
 import HoverVideoPlayer from "react-hover-video-player";
 
 import Image from "next/image";
 import { AiFillGithub, AiFillHome } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 
 const Portfolio = () => {
   const portfolios = [
@@ -16,6 +22,7 @@ const Portfolio = () => {
       imageSrc: reactMovie,
       url: "https://github.com/jwinbush/movie",
       demo: "https://cinefilm.vercel.app",
+      description: "ReactJS | API | SCSS ",
     },
     {
       id: 2,
@@ -24,6 +31,7 @@ const Portfolio = () => {
       imageSrc: nextSpotify,
       url: "https://github.com/jwinbush/spotify",
       demo: "https://www.jawonwinbush.com/login",
+      description: "NextJS | API | TailwindCSS ",
     },
     {
       id: 3,
@@ -32,6 +40,7 @@ const Portfolio = () => {
       imageSrc: phpRental,
       url: "https://github.com/jwinbush/OdysseyRentals",
       demo: "",
+      description: "PHP | MySQL | Apache ",
     },
     // {
     //   id: 4,
@@ -47,22 +56,26 @@ const Portfolio = () => {
     <div id="portfolio" className="w-full">
       <div className="max-w-screen-2xl mx-auto px-8 py-16 text-center md:text-left">
         <div className="max-w-5xl mx-auto grid md:grid-cols-1 gap-12">
-          {portfolios.map(({ video, imageSrc, url, demo }) => (
-            <div className="cursor-pointer group shadow-lg overflow-hidden rounded-md bg-white dark:bg-gray-800">
+          {portfolios.map(({ video, imageSrc, description, url, demo }) => (
+            
+            <div className="cursor-pointer group shadow-lg overflow-hidden bg-white dark:bg-gray-800">
+                 <p className="text-black mb-2 text-center">
+                  <small>{description}</small>
+                </p>
               <HoverVideoPlayer
                 videoSrc={video}
-                className="rounded"
+                className=" "
                 pausedOverlay={
                   <Image
                     src={imageSrc}
-                    className="rounded duration-300 text-center"
+                    className="  duration-300 text-center"
                   />
                 }
               />
 
               <div className="text-2xl flex justify-center gap-16 text-center capitalize my-2 font-light duration-200 underline-offset-4 dark:text-white">
                 <a href={`${url}`} target="_blank">
-                  <AiFillGithub className="hover:" />
+                  <AiFillGithub />
                 </a>
                 <a href={`${demo}`} target="_blank">
                   <AiFillHome />
@@ -72,6 +85,126 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
+      {/* <!-- Container for demo purpose --> */}
+      <div className="container my-24 px-6 mx-auto">
+        {/* <!-- Section: Design Block --> */}
+        <section className="mb-32 text-gray-800 text-center">
+          <h2 className="md:text-3xl  text-lg font-bold mb-12 text-center dark:text-white">
+            What I've been up to lately.
+          </h2>
+
+          <div className="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
+            <div className="mb-6 lg:mb-0">
+              <div>
+                <div
+                  className="relative overflow-hidden bg-no-repeat bg-cover ripple hover:animate-pulse mb-6"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  <Image src={suits} className="w-full h-full" alt="Louvre" />
+                  <a href="#!">
+                    <div
+                      className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                      style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
+                    ></div>
+                  </a>
+                </div>
+
+                <h5 className="text-lg font-bold mb-3">Sharp Wear </h5>
+                <div className="mb-3 text-black flex items-center justify-center">
+                  <a
+                    href="https://github.com/jwinbush/suits2023"
+                    target="_blank"
+                  >
+                    {" "}
+                    <BsGithub className="text-3xl" />
+                  </a>
+                </div>
+                <p className="text-black dark:text-white mb-6">
+                  <small>ReactJS | jQuery | TailwindCSS</small>
+                </p>
+
+                <p className="text-black">
+                  I really enjoy creating ReactJS web applications, which drove
+                  me to begin working on this ecommerce project. The purpose of
+                  this website is to give customers the option to rent or buy
+                  suits and business casual clothes.
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-6 lg:mb-0">
+              <div>
+                <div
+                  className="relative overflow-hidden bg-no-repeat bg-cover ripple hover:animate-pulse mb-6"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  <Image
+                    src={drugCrisis}
+                    className="w-full h-full"
+                    alt="Louvre"
+                  />
+                  <a href="#!">
+                    <div
+                      className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                      style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
+                    ></div>
+                  </a>
+                </div>
+
+                <h5 className="text-lg font-bold mb-3">
+                  The Drug Crisis Throughout the U.S
+                </h5>
+
+                <p className="text-black mb-6">
+                  <small>Tableau | Data Visualization</small>
+                </p>
+                <p className="text-black">
+                  Drug cases have grew for many years. I
+                  decided to created a visualization dashboard, allowing me to
+                  observe the growth of cases throughout the last 7 years. This
+                  data visualization dashboard presents the amount of predicted and reported
+                  drug cases.
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-0">
+              <div>
+                <div
+                  className="relative overflow-hidden h-full bg-no-repeat bg-cover ripple hover:animate-pulse mb-6"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  <Image src={netflix} className="w-full h-full" alt="Louvre" />
+                  <a href="#!">
+                    <div
+                      className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                      style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
+                    ></div>
+                  </a>
+                </div>
+
+                <h5 className="text-lg font-bold mb-3">Netflix Viewership</h5>
+
+                <p className="text-black mb-6">
+                  <small>Tableau | Data Visualization</small>
+                </p>
+                <p className="text-black">
+                  This is a Netflix dashboard which reveals the popularity of a
+                  tv series or movie. When a user selects a title the
+                  description is revealed, as well as the location that has the
+                  most viewers. The data gathered is from around the world and
+                  the dataset is from Kaggle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Section: Design Block --> */}
+      </div>
+      {/* <!-- Container for demo purpose --> */}
     </div>
   );
 };

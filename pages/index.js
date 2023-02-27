@@ -75,7 +75,8 @@ export default function Home() {
         id="About"
       >
         <section className="min-h-screen">
-          {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 flex-grow flex">
+          
+          {/* <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5   dark:bg-gray-900 flex-grow flex">
             <div  className="container flex flex-wrap items-center justify-between mx-auto">
               <a href="https://flowbite.com/"  className="flex items-center">
                 <img
@@ -90,7 +91,7 @@ export default function Home() {
               <button
                 data-collapse-toggle="navbar-default"
                 type="button"
-                 className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                 className="inline-flex items-center p-2 ml-3 text-sm text-gray-500   md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default"
                 aria-expanded="false"
               >
@@ -101,11 +102,11 @@ export default function Home() {
                 />
               </button>
               <div  className="hidden w-full md:block md:w-auto" id="navbar-open">
-                <ul  className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul  className="flex flex-col p-4 mt-4 border border-gray-100   bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
                     <a
                       href="#"
-                       className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                       className="block py-2 pl-3 pr-4 text-white bg-blue-700   md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                       aria-current="page"
                     >
                       Home
@@ -114,7 +115,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700   hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       About
                     </a>
@@ -122,7 +123,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700   hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Services
                     </a>
@@ -130,7 +131,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700   hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Pricing
                     </a>
@@ -138,7 +139,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#"
-                       className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                       className="block py-2 pl-3 pr-4 text-gray-700   hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Contact
                     </a>
@@ -149,7 +150,7 @@ export default function Home() {
           </nav> */}
           <nav className=" shadow-xl py-2 mb-6 md:mb-12 flex justify-between bg-gradient-to-r from-black to-gray-800 px-10 fixed w-full z-50">
             <Image
-              className={`text-3xl md:text-5xl px-4 rounded-xl`}
+              className={`text-3xl md:text-5xl px-4  -xl`}
               src={mainlogo}
               width={60}
               height={60}
@@ -225,7 +226,7 @@ export default function Home() {
                 below.
               </p>
 
-              {/* <div className=" hero mx-auto bg-white-500 rounded-2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
+              {/* <div className=" hero mx-auto bg-white-500  -2xl md:w-80 md:h-80 overflow-hidden mt-12 w-56 h-56 md:relative absolute items-center hover:shadow-xl">
                 <Image
                   src={jawon}
                   layout="fill"
@@ -250,7 +251,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg dark:shadow-inner p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-center shadow-lg dark:shadow-inner p-10  -xl my-10  dark:bg-white flex-1">
               <Image src={frontend} width={100} height={100} />
               <h3 className="text-2xl pt-8 pb-2 font-bold">Frontend</h3>
 
@@ -266,7 +267,7 @@ export default function Home() {
 
               <p className="text-gray-800 py-1 ">CSS</p>
             </div>
-            <div className="text-center shadow-lg dark:shadow-inner p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg dark:shadow-inner p-10  -xl my-10 dark:bg-white flex-1">
               <Image
                 priority
                 src={backend}
@@ -292,7 +293,7 @@ export default function Home() {
 
               <p className="text-gray-800 py-1 ">Java</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10  -xl my-10 dark:bg-white flex-1">
               <Image src={more} width={100} height={100} />
               <h3 className="text-2xl pt-8 pb-2 font-bold">More</h3>
               <p className="text-gray-800 py-1 ">
@@ -324,6 +325,195 @@ export default function Home() {
             </p>
           </div>
           <Portfolio />
+          {/* <!-- Container for demo purpose --> */}
+{/* <div  className="container my-24 px-6 mx-auto">
+
+  <section  className="mb-32 text-gray-800 text-center">
+
+    <h2  className="text-3xl font-bold mb-12">Testimonials</h2>
+
+    <div  className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+      <div  className="mb-12 md:mb-0">
+        <div  className="flex justify-center mb-6">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"  className=" -full shadow-lg w-32" />
+        </div>
+        <h5  className="text-lg font-bold mb-4">Maria Smantha</h5>
+        <h6  className="font-medium text-blue-600 mb-4">Web Developer</h6>
+        <p  className="mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+             className="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+            </path>
+          </svg>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
+          tenetur quae quaerat ad velit ab hic tenetur.
+        </p>
+        <ul  className="flex justify-center mb-0">
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star-half-alt"
+               className="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 512">
+              <path fill="currentColor"
+                d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z">
+              </path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div  className="mb-12 md:mb-0">
+        <div  className="flex justify-center mb-6">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"  className=" -full shadow-lg w-32" />
+        </div>
+        <h5  className="text-lg font-bold mb-4">Lisa Cudrow</h5>
+        <h6  className="font-medium text-blue-600 mb-4">Graphic Designer</h6>
+        <p  className="mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+             className="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+            </path>
+          </svg>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam, nisi ut aliquid commodi.
+        </p>
+        <ul  className="flex justify-center mb-0">
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div  className="mb-0">
+        <div  className="flex justify-center mb-6">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"  className=" -full shadow-lg w-32" />
+        </div>
+        <h5  className="text-lg font-bold mb-4">John Smith</h5>
+        <h6  className="font-medium text-blue-600 mb-4">Marketing Specialist</h6>
+        <p  className="mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+             className="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+            </path>
+          </svg>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti.
+        </p>
+        <ul  className="flex justify-center mb-0">
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star"  className="w-4 text-yellow-500"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor"
+                d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z">
+              </path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+</div> */}
+{/* <!-- Container for demo purpose --> */}
           <div>
             <h3
               className={`text-3xl md:text-5xl font-semibold pt-24 text-center ${text}`}
@@ -351,7 +541,7 @@ export default function Home() {
                     <input
                       type="email"
                       id="email"
-                      className="shadow-sm bg-gray-50 border border-gray-300 text-black text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      className="shadow-sm bg-gray-50 border border-gray-300 text-black text-lg   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                       placeholder="name@example.com"
                       required
                     />
@@ -366,7 +556,7 @@ export default function Home() {
                     <input
                       type="text"
                       id="subject"
-                      className="block p-3 w-full text-lg text-black dark:text-white bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                      className="block p-3 w-full text-lg text-black dark:text-white bg-gray-50   border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                       placeholder="Your subject..."
                       required
                     />
@@ -381,13 +571,13 @@ export default function Home() {
                     <textarea
                       id="message"
                       rows="6"
-                      className="block p-2.5 w-full text-lg text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      className="block p-2.5 w-full text-lg text-gray-900 bg-gray-50   shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                       placeholder="Leave a comment..."
                     ></textarea>
                   </div>
                   <button
                     type="submit"
-                    className="py-3 px-5 text-lg font-medium dark:text-white sm:w-fit focus:ring-4 focus:outline-none bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-md"
+                    className="py-3 px-5 text-lg font-medium dark:text-white sm:w-fit focus:ring-4 focus:outline-none bg-gradient-to-r from-yellow-400 to-yellow-600   "
                   >
                     Send message
                   </button>
@@ -415,7 +605,7 @@ export default function Home() {
             </div>
 
             <div className=" pt-20 text-black dark:text-white md:text-md text-sm text-center">
-              <p>Designed and developed by Jawon Winbush. (2023)</p>
+              <p>Designed and developed by Jawon Winbush. (Last updated - (2/27/2023))</p>
             </div>
           </footer>
         </section>
