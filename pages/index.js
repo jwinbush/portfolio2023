@@ -605,7 +605,7 @@ export default function Home() {
             </div>
 
             <div className=" pt-20 text-black dark:text-white md:text-md text-sm text-center">
-              <p>Designed and developed by Jawon Winbush. (Last updated - (2/27/2023))</p>
+              <p>Designed and developed with Next.js. Last updated - (2/27/2023)</p>
             </div>
           </footer>
         </section>
